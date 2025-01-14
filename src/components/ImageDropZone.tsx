@@ -1,6 +1,8 @@
 import type { DragEvent } from "react";
 import React, { useState } from "react";
 import { ACCEPTED_TYPES, SUPPORTED_IMAGES } from "../utils/images";
+import { Enumeration } from "./List";
+import { t } from "i18next";
 
 interface Props {
 	onImageAccepted: (file: File) => void;
@@ -52,20 +54,18 @@ export const ImageDropZone: React.FC<Props> = ({ onImageAccepted }) => {
 			{isError ? (
 				<div className="text-center">
 					<div className="text-6xl mb-4">😢</div>
-					<div className="text-red-500">Filetype not supported (yet)</div>
+					<div className="text-red-500">{t("dropzone.not-supported")}</div>
 				</div>
 			) : isSuccess ? (
 				<div className="text-center">
 					<div className="text-6xl mb-4">✅</div>
-					<div className="text-primary-light dark:text-primary-dark">Processing image...</div>
+					<div className="text-primary-light dark:text-primary-dark">{t("dropzone.processing")}</div>
 				</div>
 			) : (
 				<div className="text-center text-gray-500 dark:text-gray-400">
-					<p className="text-lg">Drop your image here</p>
+					<p className="text-lg">{t("dropzone.drop")}</p>
 					<p className="text-sm">
-						{new Intl.ListFormat(navigator.language, { type: "disjunction" }).format(
-							SUPPORTED_IMAGES.map((i) => i.name)
-						)}
+						<Enumeration array={SUPPORTED_IMAGES.map((i) => i.name)} type="disjunction" />
 					</p>
 				</div>
 			)}

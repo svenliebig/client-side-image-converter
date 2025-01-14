@@ -1,0 +1,18 @@
+{
+	"app": {
+		"name": "Bildkonverter"
+	},
+	"editor": {
+		"resolution": "Auflösung",
+		"download": "Herunterladen als ({# resolution #})",
+		"image": {
+			"download-name": "konvertiertes-bild"
+		}
+	},
+	"dropzone": {
+		"supported": "Unterstützte Dateitypen:",
+		"processing": "Bild wird verarbeitet...",
+		"not-supported": "Filetype not supported (yet)",
+		"drop": "Drop your image here"
+	}
+}

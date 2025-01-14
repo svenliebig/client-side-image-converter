@@ -3,6 +3,7 @@ import "cropperjs/dist/cropper.css";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Cropper from "react-cropper";
 import { SUPPORTED_IMAGES } from "../utils/images";
+import { t } from "i18next";
 
 interface Props {
 	imageFile: File;
@@ -56,7 +57,7 @@ export const ImageEditor: React.FC<Props> = ({ imageFile, onReset }) => {
 			const url = URL.createObjectURL(processedImage as Blob);
 			const a = document.createElement("a");
 			a.href = url;
-			a.download = `converted-image.${format.split("/")[1]}`;
+			a.download = `${t("editor.image.download-name")}.${format.split("/")[1]}`;
 			document.body.appendChild(a);
 			a.click();
 			document.body.removeChild(a);
@@ -120,7 +121,7 @@ export const ImageEditor: React.FC<Props> = ({ imageFile, onReset }) => {
 			<div className="flex justify-between items-start gap-8">
 				<div className="space-y-4 flex-1">
 					<h3 className="text-lg font-semibold dark:text-white">
-						Download as ({resolution.width} x {resolution.height}px)
+						{t("editor.download", { resolution: `${resolution.width} x ${resolution.height}px` })}
 					</h3>
 					<div className="flex gap-4">
 						{SUPPORTED_IMAGES.map(({ type, name }) => (
@@ -137,7 +138,7 @@ export const ImageEditor: React.FC<Props> = ({ imageFile, onReset }) => {
 				</div>
 
 				<div className="space-y-4">
-					<h3 className="text-lg font-semibold dark:text-white">Resolution</h3>
+					<h3 className="text-lg font-semibold dark:text-white">{t("editor.resolution")}</h3>
 					<div className="flex flex-col gap-2">
 						{[1, 0.75, 0.5, 0.25].map((scale) => (
 							<button

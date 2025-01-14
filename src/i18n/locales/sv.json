@@ -1,0 +1,18 @@
+{
+	"app": {
+		"name": "Bildkonverterare"
+	},
+	"editor": {
+		"resolution": "Upplösning",
+		"download": "Ladda ner som ({# resolution #})",
+		"image": {
+			"download-name": "konverterad-bild"
+		}
+	},
+	"dropzone": {
+		"supported": "Stödda filtyper:",
+		"processing": "Bearbetar bild...",
+		"not-supported": "Filtyp stöds inte (än)",
+		"drop": "Släpp din bild här"
+	}
+}

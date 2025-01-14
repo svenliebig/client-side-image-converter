@@ -1,0 +1,18 @@
+{
+	"app": {
+		"name": "Billede Konverter"
+	},
+	"editor": {
+		"resolution": "Opløsning",
+		"download": "Download som ({# resolution #})",
+		"image": {
+			"download-name": "konverteret-billede"
+		}
+	},
+	"dropzone": {
+		"supported": "Understøttede filtyper:",
+		"processing": "Behandler billede...",
+		"not-supported": "Filtype understøttes ikke (endnu)",
+		"drop": "Slip dit billede her"
+	}
+}

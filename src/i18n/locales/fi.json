@@ -1,0 +1,18 @@
+{
+	"app": {
+		"name": "Kuvankäsittelyohjelma"
+	},
+	"editor": {
+		"resolution": "Resoluutio",
+		"download": "Lataa ({# resolution #})",
+		"image": {
+			"download-name": "muokattu-kuva"
+		}
+	},
+	"dropzone": {
+		"supported": "Tuetut tiedostotyypit:",
+		"processing": "Kuvaa käsitellään...",
+		"not-supported": "Tiedostotyyppiä ei tueta (vielä)",
+		"drop": "Pudota kuvasi tänne"
+	}
+}

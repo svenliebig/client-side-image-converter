@@ -1,0 +1,18 @@
+{
+	"app": {
+		"name": "Konwerter Obrazów"
+	},
+	"editor": {
+		"resolution": "Rozdzielczość",
+		"download": "Pobierz jako ({# resolution #})",
+		"image": {
+			"download-name": "przekonwertowany-obraz"
+		}
+	},
+	"dropzone": {
+		"supported": "Obsługiwane typy plików:",
+		"processing": "Przetwarzanie obrazu...",
+		"not-supported": "Typ pliku nie jest obsługiwany (jeszcze)",
+		"drop": "Upuść swój obraz tutaj"
+	}
+}

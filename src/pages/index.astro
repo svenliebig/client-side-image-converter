@@ -3,10 +3,12 @@ import Layout from "../layouts/Layout.astro";
 import { App } from "../components/App";
 import { CursorEffect } from "../components/CursorEffect";
 import { ThemeToggle } from "../components/ThemeToggle";
+import { LanguageToggle } from "../components/LanguageToggle";
 ---
 
 <Layout title="Image Converter">
 	<main class="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+		<LanguageToggle client:only="react" />
 		<ThemeToggle client:only="react" />
 		<CursorEffect client:load />
 		<App client:only="react" />

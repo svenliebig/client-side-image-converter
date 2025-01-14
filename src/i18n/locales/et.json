@@ -1,0 +1,18 @@
+{
+	"app": {
+		"name": "Pildimuundur"
+	},
+	"editor": {
+		"resolution": "Resolutsioon",
+		"download": "Laadi alla kui ({# resolution #})",
+		"image": {
+			"download-name": "muudetud-pilt"
+		}
+	},
+	"dropzone": {
+		"supported": "Toetatud failitüübid:",
+		"processing": "Pildi töötlemine...",
+		"not-supported": "Failitüüp ei ole toetatud (veel)",
+		"drop": "Lohista oma pilt siia"
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"app": {
+		"name": "Képátalakító"
+	},
+	"editor": {
+		"resolution": "Felbontás",
+		"download": "Letöltés mint ({# resolution #})",
+		"image": {
+			"download-name": "átalakított-kép"
+		}
+	},
+	"dropzone": {
+		"supported": "Támogatott fájltípusok:",
+		"processing": "Kép feldolgozása...",
+		"not-supported": "A fájltípus nem támogatott (még)",
+		"drop": "Húzza ide a képet"
+	}
+}

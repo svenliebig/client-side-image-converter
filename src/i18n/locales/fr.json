@@ -1,0 +1,18 @@
+{
+	"app": {
+		"name": "Convertisseur d'images"
+	},
+	"editor": {
+		"resolution": "Résolution",
+		"download": "Télécharger comme ({# resolution #})",
+		"image": {
+			"download-name": "image-convertie"
+		}
+	},
+	"dropzone": {
+		"supported": "Types de fichiers pris en charge :",
+		"processing": "Traitement de l'image...",
+		"not-supported": "Type de fichier non pris en charge (encore)",
+		"drop": "Déposez votre image ici"
+	}
+}

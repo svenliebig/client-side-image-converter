@@ -1,0 +1,18 @@
+{
+	"app": {
+		"name": "Vaizdo Keitiklis"
+	},
+	"editor": {
+		"resolution": "Rezoliucija",
+		"download": "Atsisiųsti kaip ({# resolution #})",
+		"image": {
+			"download-name": "konvertuotas-vaizdas"
+		}
+	},
+	"dropzone": {
+		"supported": "Palaikomi failų tipai:",
+		"processing": "Vaizdas apdorojamas...",
+		"not-supported": "Failo tipas nepalaikomas (dar)",
+		"drop": "Įkelkite savo vaizdą čia"
+	}
+}

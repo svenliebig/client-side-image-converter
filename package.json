@@ -1,29 +1,30 @@
 {
-  "name": "client-side-image-converter",
-  "type": "module",
-  "version": "1.0.0",
-  "author": {
-    "name": "Sven Liebig",
-    "url": "https://svenliebig.com"
-  },
-  "private": true,
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/react": "^3.0.10",
-    "@astrojs/tailwind": "^5.1.0",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.19",
-    "astro": "^4.15.3",
-    "react": "^18.2.0",
-    "react-cropper": "^2.3.3",
-    "react-dom": "^18.2.0",
-    "tailwindcss": "^3.4.1",
-    "browser-image-compression": "^2.0.2"
-  }
+	"name": "client-side-image-converter",
+	"type": "module",
+	"version": "1.0.0",
+	"author": {
+		"name": "Sven Liebig",
+		"url": "https://svenliebig.com"
+	},
+	"private": true,
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/react": "^3.0.10",
+		"@astrojs/tailwind": "^5.1.0",
+		"@types/react": "^18.2.55",
+		"@types/react-dom": "^18.2.19",
+		"astro": "^4.15.3",
+		"browser-image-compression": "^2.0.2",
+		"i18next": "^24.2.1",
+		"react": "^18.2.0",
+		"react-cropper": "^2.3.3",
+		"react-dom": "^18.2.0",
+		"tailwindcss": "^3.4.1"
+	}
 }
