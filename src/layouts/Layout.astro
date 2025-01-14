@@ -1,0 +1,29 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Image Converter - Convert between SVG, PNG, and JPEG formats" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<script>
+			const isDarkModePreferred = window.matchMedia("(prefers-color-scheme: dark)").matches;
+			const localStorageTheme = localStorage.getItem("theme");
+			const theme = localStorageTheme || (isDarkModePreferred ? "dark" : "light");
+			if (theme === "dark") document.documentElement.classList.add("dark");
+			if (theme !== localStorageTheme) localStorage.setItem("theme", theme);
+		</script>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
