@@ -1,6 +1,5 @@
 import imageCompression from "browser-image-compression";
 import "cropperjs/dist/cropper.css";
-import type { default as Flopper } from "cropperjs";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Cropper from "react-cropper";
 
@@ -37,8 +36,8 @@ export const ImageEditor: React.FC<Props> = ({ imageFile, onReset }) => {
 
 				// Compress the image if it's not SVG
 				if (format !== "image/svg+xml") {
-					const compressedFile = await imageCompression(new File([blob], "image.jpg", { type: blob.type }), {
-						maxSizeMB: 1,
+					const compressedFile = await imageCompression(new File([blob], "", { type: blob.type }), {
+						// maxSizeMB: 1,
 						maxWidthOrHeight: resolution.width,
 					});
 					resolve(compressedFile);
@@ -123,7 +122,7 @@ export const ImageEditor: React.FC<Props> = ({ imageFile, onReset }) => {
 						Download as ({resolution.width} x {resolution.height}px)
 					</h3>
 					<div className="flex gap-4">
-						{["image/png", "image/jpeg", "image/svg+xml"].map((format) => (
+						{["image/png", "image/jpeg", "image/webp", "image/svg+xml"].map((format) => (
 							<button
 								key={format}
 								onClick={() => handleDownload(format)}
