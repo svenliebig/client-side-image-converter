@@ -1,5 +1,7 @@
 # Client Side Image Converter
 
+![image-converter](./assets/example.png)
+
 ## Requirements
 
 - Node.js (20+)
