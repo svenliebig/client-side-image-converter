@@ -12,7 +12,7 @@
 	"dropzone": {
 		"supported": "Unterstützte Dateitypen:",
 		"processing": "Bild wird verarbeitet...",
-		"not-supported": "Filetype not supported (yet)",
-		"drop": "Drop your image here"
+		"not-supported": "Dateityp wird (noch) nicht supported",
+		"drop": "Bilddateien hier herziehen"
 	}
 }
