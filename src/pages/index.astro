@@ -9,6 +9,6 @@ import { ThemeToggle } from "../components/ThemeToggle";
 	<main class="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
 		<ThemeToggle client:only="react" />
 		<CursorEffect client:load />
-		<App client:load />
+		<App client:only="react" />
 	</main>
 </Layout>
