@@ -4,7 +4,7 @@
 	},
 	"editor": {
 		"resolution": "ठराव",
-		"download": "({# resolution #}) म्हणून डाउनलोड करा",
+		"download": "({{resolution}}) म्हणून डाउनलोड करा",
 		"image": {
 			"download-name": "रूपांतरित-प्रतिमा"
 		}

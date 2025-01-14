@@ -4,7 +4,7 @@
 	},
 	"editor": {
 		"resolution": "Ανάλυση",
-		"download": "Κατεβάστε ως ({# resolution #})",
+		"download": "Κατεβάστε ως ({{resolution}})",
 		"image": {
 			"download-name": "μετατραπείσα-εικόνα"
 		}

@@ -4,7 +4,7 @@
 	},
 	"editor": {
 		"resolution": "Felbontás",
-		"download": "Letöltés mint ({# resolution #})",
+		"download": "Letöltés mint ({{resolution}})",
 		"image": {
 			"download-name": "átalakított-kép"
 		}

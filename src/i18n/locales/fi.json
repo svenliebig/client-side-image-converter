@@ -4,7 +4,7 @@
 	},
 	"editor": {
 		"resolution": "Resoluutio",
-		"download": "Lataa ({# resolution #})",
+		"download": "Lataa ({{resolution}})",
 		"image": {
 			"download-name": "muokattu-kuva"
 		}

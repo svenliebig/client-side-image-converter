@@ -4,7 +4,7 @@
 	},
 	"editor": {
 		"resolution": "Resolución",
-		"download": "Descargar como ({# resolution #})",
+		"download": "Descargar como ({{resolution}})",
 		"image": {
 			"download-name": "imagen-convertida"
 		}

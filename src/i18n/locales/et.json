@@ -4,7 +4,7 @@
 	},
 	"editor": {
 		"resolution": "Resolutsioon",
-		"download": "Laadi alla kui ({# resolution #})",
+		"download": "Laadi alla kui ({{resolution}})",
 		"image": {
 			"download-name": "muudetud-pilt"
 		}

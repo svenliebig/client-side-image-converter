@@ -4,7 +4,7 @@
 	},
 	"editor": {
 		"resolution": "Rezoliucija",
-		"download": "Atsisiųsti kaip ({# resolution #})",
+		"download": "Atsisiųsti kaip ({{resolution}})",
 		"image": {
 			"download-name": "konvertuotas-vaizdas"
 		}
