@@ -1,11 +1,10 @@
 import type { DragEvent } from "react";
 import React, { useState } from "react";
+import { ACCEPTED_TYPES, SUPPORTED_IMAGES } from "../utils/images";
 
 interface Props {
 	onImageAccepted: (file: File) => void;
 }
-
-const ACCEPTED_TYPES = ["image/svg+xml", "image/png", "image/jpeg", "image/jpg", "image/webp"];
 
 export const ImageDropZone: React.FC<Props> = ({ onImageAccepted }) => {
 	const [isDragging, setIsDragging] = useState(false);
@@ -63,7 +62,11 @@ export const ImageDropZone: React.FC<Props> = ({ onImageAccepted }) => {
 			) : (
 				<div className="text-center text-gray-500 dark:text-gray-400">
 					<p className="text-lg">Drop your image here</p>
-					<p className="text-sm">Supported formats: SVG, PNG, JPEG, WebP</p>
+					<p className="text-sm">
+						{new Intl.ListFormat(navigator.language, { type: "disjunction" }).format(
+							SUPPORTED_IMAGES.map((i) => i.name)
+						)}
+					</p>
 				</div>
 			)}
 		</div>

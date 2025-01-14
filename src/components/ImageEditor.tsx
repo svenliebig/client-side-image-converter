@@ -2,6 +2,7 @@ import imageCompression from "browser-image-compression";
 import "cropperjs/dist/cropper.css";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Cropper from "react-cropper";
+import { SUPPORTED_IMAGES } from "../utils/images";
 
 interface Props {
 	imageFile: File;
@@ -122,14 +123,14 @@ export const ImageEditor: React.FC<Props> = ({ imageFile, onReset }) => {
 						Download as ({resolution.width} x {resolution.height}px)
 					</h3>
 					<div className="flex gap-4">
-						{["image/png", "image/jpeg", "image/webp", "image/svg+xml"].map((format) => (
+						{SUPPORTED_IMAGES.map(({ type, name }) => (
 							<button
-								key={format}
-								onClick={() => handleDownload(format)}
+								key={type}
+								onClick={() => handleDownload(type)}
 								disabled={loading}
 								className="px-4 py-2 bg-primary-light dark:bg-primary-dark text-white rounded-lg hover:opacity-90 disabled:opacity-50"
 							>
-								{format.split("/")[1].toUpperCase()}
+								{name}
 							</button>
 						))}
 					</div>
