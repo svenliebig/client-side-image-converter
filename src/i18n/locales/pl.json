@@ -5,6 +5,7 @@
 	"editor": {
 		"resolution": "Rozdzielczość",
 		"download": "Pobierz jako ({{resolution}})",
+		"save": "Zapisz kompozycję",
 		"image": {
 			"download-name": "przekonwertowany-obraz"
 		}
@@ -13,6 +14,14 @@
 		"supported": "Obsługiwane typy plików:",
 		"processing": "Przetwarzanie obrazu...",
 		"not-supported": "Typ pliku nie jest obsługiwany (jeszcze)",
-		"drop": "Upuść swój obraz tutaj"
+		"drop": "Upuść swój obraz tutaj",
+		"drop-multiple": "Upuść jeden lub więcej obrazów tutaj"
+	},
+	"canvas": {
+		"arrange": "Przeciągnij obrazy, aby je ułożyć",
+		"save": "Zapisz kompozycję",
+		"bring-front": "Przenieś na przód",
+		"send-back": "Przenieś na tył",
+		"keyboard-hint": "Użyj klawiszy strzałek lub HJKL, aby przesunąć o 1px, przytrzymaj Shift dla 10px"
 	}
 }

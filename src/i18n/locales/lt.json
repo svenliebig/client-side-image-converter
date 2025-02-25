@@ -1,18 +1,27 @@
 {
 	"app": {
-		"name": "Vaizdo Keitiklis"
+		"name": "Vaizdų konverteris"
 	},
 	"editor": {
-		"resolution": "Rezoliucija",
+		"resolution": "Raiška",
 		"download": "Atsisiųsti kaip ({{resolution}})",
+		"save": "Išsaugoti kompoziciją",
 		"image": {
 			"download-name": "konvertuotas-vaizdas"
 		}
 	},
 	"dropzone": {
 		"supported": "Palaikomi failų tipai:",
-		"processing": "Vaizdas apdorojamas...",
-		"not-supported": "Failo tipas nepalaikomas (dar)",
-		"drop": "Įkelkite savo vaizdą čia"
+		"processing": "Apdorojami vaizdai...",
+		"not-supported": "Failo tipas nepalaikomas (kol kas)",
+		"drop": "Įkelkite savo vaizdą čia",
+		"drop-multiple": "Įkelkite vieną ar daugiau vaizdų čia"
+	},
+	"canvas": {
+		"arrange": "Tempkite vaizdus, kad juos išdėstytumėte",
+		"save": "Išsaugoti kompoziciją",
+		"bring-front": "Perkelti į priekį",
+		"send-back": "Nusiųsti atgal",
+		"keyboard-hint": "Naudokite rodyklių klavišus arba HJKL judėjimui 1px, laikykite Shift 10px"
 	}
 }

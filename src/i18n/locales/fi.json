@@ -1,18 +1,27 @@
 {
 	"app": {
-		"name": "Kuvankäsittelyohjelma"
+		"name": "Kuvamuunnin"
 	},
 	"editor": {
 		"resolution": "Resoluutio",
-		"download": "Lataa ({{resolution}})",
+		"download": "Lataa muodossa ({{resolution}})",
+		"save": "Tallenna sommittelu",
 		"image": {
-			"download-name": "muokattu-kuva"
+			"download-name": "muunnettu-kuva"
 		}
 	},
 	"dropzone": {
 		"supported": "Tuetut tiedostotyypit:",
-		"processing": "Kuvaa käsitellään...",
+		"processing": "Käsitellään kuvia...",
 		"not-supported": "Tiedostotyyppiä ei tueta (vielä)",
-		"drop": "Pudota kuvasi tänne"
+		"drop": "Pudota kuvasi tähän",
+		"drop-multiple": "Pudota yksi tai useampi kuva tähän"
+	},
+	"canvas": {
+		"arrange": "Vedä kuvia järjestääksesi ne",
+		"save": "Tallenna sommittelu",
+		"bring-front": "Tuo eteen",
+		"send-back": "Lähetä taakse",
+		"keyboard-hint": "Käytä nuolinäppäimiä tai HJKL siirtääksesi 1px, pidä Shift pohjassa 10px"
 	}
 }

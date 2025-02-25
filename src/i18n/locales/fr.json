@@ -5,14 +5,23 @@
 	"editor": {
 		"resolution": "Résolution",
 		"download": "Télécharger comme ({{resolution}})",
+		"save": "Enregistrer la composition",
 		"image": {
 			"download-name": "image-convertie"
 		}
 	},
 	"dropzone": {
-		"supported": "Types de fichiers pris en charge :",
-		"processing": "Traitement de l'image...",
-		"not-supported": "Type de fichier non pris en charge (encore)",
-		"drop": "Déposez votre image ici"
+		"supported": "Types de fichiers supportés:",
+		"processing": "Traitement des images...",
+		"not-supported": "Type de fichier non supporté (pour le moment)",
+		"drop": "Déposez votre image ici",
+		"drop-multiple": "Déposez une ou plusieurs images ici"
+	},
+	"canvas": {
+		"arrange": "Faites glisser les images pour les organiser",
+		"save": "Enregistrer la composition",
+		"bring-front": "Mettre au premier plan",
+		"send-back": "Mettre en arrière-plan",
+		"keyboard-hint": "Utilisez les flèches ou HJKL pour déplacer de 1px, maintenez Shift pour 10px"
 	}
 }

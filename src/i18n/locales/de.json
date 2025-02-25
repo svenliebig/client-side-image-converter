@@ -5,14 +5,23 @@
 	"editor": {
 		"resolution": "Auflösung",
 		"download": "Herunterladen als ({{resolution}})",
+		"save": "Komposition speichern",
 		"image": {
 			"download-name": "konvertiertes-bild"
 		}
 	},
 	"dropzone": {
 		"supported": "Unterstützte Dateitypen:",
-		"processing": "Bild wird verarbeitet...",
-		"not-supported": "Dateityp wird (noch) nicht supported",
-		"drop": "Bilddateien hier herziehen"
+		"processing": "Bilder werden verarbeitet...",
+		"not-supported": "Dateityp (noch) nicht unterstützt",
+		"drop": "Bild hier ablegen",
+		"drop-multiple": "Ein oder mehrere Bilder hier ablegen"
+	},
+	"canvas": {
+		"arrange": "Bilder zum Anordnen ziehen",
+		"save": "Komposition speichern",
+		"bring-front": "In den Vordergrund",
+		"send-back": "In den Hintergrund",
+		"keyboard-hint": "Pfeiltasten oder HJKL für 1px Bewegung, Shift halten für 10px"
 	}
 }

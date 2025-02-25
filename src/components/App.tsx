@@ -1,29 +1,48 @@
-import React, { useState, useSyncExternalStore } from "react";
+import React, { useState } from "react";
 import i18n from "../i18n/i18n";
+import { ImageCanvas } from "./ImageCanvas";
 import { ImageDropZone } from "./ImageDropZone";
 import { ImageEditor } from "./ImageEditor";
-import { rerenderStore } from "../utils/rerender-store";
 
 export const App: React.FC = () => {
-	useSyncExternalStore(rerenderStore.subscribe, rerenderStore.getSnapshot);
-	const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [images, setImages] = useState<File[]>([]);
+  const [isMultipleImages, setIsMultipleImages] = useState(false);
 
-	const handleImageAccepted = (file: File) => {
-		setSelectedFile(file);
-	};
+  const handleImagesAccepted = (files: File[]) => {
+    setImages(files);
+    setIsMultipleImages(files.length > 1);
+  };
 
-	const handleReset = () => {
-		setSelectedFile(null);
-	};
+  const handleReset = () => {
+    setImages([]);
+    setIsMultipleImages(false);
+  };
 
-	return (
-		<div className="container mx-auto px-4 py-16">
-			<h1 className="text-4xl font-bold text-center mb-8 text-gray-900 dark:text-white">{i18n.t("app.name")}</h1>
-			{selectedFile ? (
-				<ImageEditor imageFile={selectedFile} onReset={handleReset} />
-			) : (
-				<ImageDropZone onImageAccepted={handleImageAccepted} />
-			)}
-		</div>
-	);
+  const handleCanvasSave = async (canvas: HTMLCanvasElement) => {
+    canvas.toBlob((blob) => {
+      if (!blob) return;
+      const file = new File([blob], "composition.png", { type: "image/png" });
+      setImages([file]);
+      setIsMultipleImages(false);
+    }, "image/png");
+  };
+
+  return (
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-4xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+        {i18n.t("app.name")}
+      </h1>
+      {images.length === 0 ? (
+        <ImageDropZone onImagesAccepted={handleImagesAccepted} />
+      ) : isMultipleImages ? (
+        <ImageCanvas
+          images={images}
+          onReset={handleReset}
+          onSave={handleCanvasSave}
+        />
+      ) : (
+        <ImageEditor imageFile={images[0]} onReset={handleReset} />
+      )}
+    </div>
+  );
 };

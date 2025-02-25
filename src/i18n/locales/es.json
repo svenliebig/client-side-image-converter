@@ -1,18 +1,27 @@
 {
 	"app": {
-		"name": "Convertidor de Imágenes"
+		"name": "Convertidor de imágenes"
 	},
 	"editor": {
 		"resolution": "Resolución",
 		"download": "Descargar como ({{resolution}})",
+		"save": "Guardar composición",
 		"image": {
 			"download-name": "imagen-convertida"
 		}
 	},
 	"dropzone": {
 		"supported": "Tipos de archivo soportados:",
-		"processing": "Procesando imagen...",
+		"processing": "Procesando imágenes...",
 		"not-supported": "Tipo de archivo no soportado (aún)",
-		"drop": "Suelta tu imagen aquí"
+		"drop": "Suelta tu imagen aquí",
+		"drop-multiple": "Suelta una o más imágenes aquí"
+	},
+	"canvas": {
+		"arrange": "Arrastra las imágenes para organizarlas",
+		"save": "Guardar composición",
+		"bring-front": "Traer al frente",
+		"send-back": "Enviar atrás",
+		"keyboard-hint": "Usa las flechas o HJKL para mover 1px, mantén Shift para 10px"
 	}
 }

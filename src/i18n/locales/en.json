@@ -5,14 +5,23 @@
 	"editor": {
 		"resolution": "Resolution",
 		"download": "Download as ({{resolution}})",
+		"save": "Save Composition",
 		"image": {
 			"download-name": "converted-image"
 		}
 	},
 	"dropzone": {
 		"supported": "Supported filetypes:",
-		"processing": "Processing image...",
+		"processing": "Processing images...",
 		"not-supported": "Filetype not supported (yet)",
-		"drop": "Drop your image here"
+		"drop": "Drop your image here",
+		"drop-multiple": "Drop one or more images here"
+	},
+	"canvas": {
+		"arrange": "Drag images to arrange them",
+		"save": "Save composition",
+		"bring-front": "Bring to Front",
+		"send-back": "Send to Back",
+		"keyboard-hint": "Use arrow keys or HJKL to move 1px, hold Shift for 10px"
 	}
 }

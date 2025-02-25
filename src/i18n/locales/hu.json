@@ -1,18 +1,27 @@
 {
 	"app": {
-		"name": "Képátalakító"
+		"name": "Képkonvertáló"
 	},
 	"editor": {
 		"resolution": "Felbontás",
 		"download": "Letöltés mint ({{resolution}})",
+		"save": "Kompozíció mentése",
 		"image": {
-			"download-name": "átalakított-kép"
+			"download-name": "konvertalt-kep"
 		}
 	},
 	"dropzone": {
 		"supported": "Támogatott fájltípusok:",
-		"processing": "Kép feldolgozása...",
-		"not-supported": "A fájltípus nem támogatott (még)",
-		"drop": "Húzza ide a képet"
+		"processing": "Képek feldolgozása...",
+		"not-supported": "Fájltípus nem támogatott (még)",
+		"drop": "Húzza ide a képet",
+		"drop-multiple": "Húzzon ide egy vagy több képet"
+	},
+	"canvas": {
+		"arrange": "Húzza a képeket az elrendezéshez",
+		"save": "Kompozíció mentése",
+		"bring-front": "Előtérbe hozás",
+		"send-back": "Háttérbe küldés",
+		"keyboard-hint": "Használja a nyilakat vagy HJKL-t 1px mozgatáshoz, tartsa a Shift-et 10px-hez"
 	}
 }

@@ -5,14 +5,23 @@
 	"editor": {
 		"resolution": "Upplösning",
 		"download": "Ladda ner som ({{resolution}})",
+		"save": "Spara komposition",
 		"image": {
 			"download-name": "konverterad-bild"
 		}
 	},
 	"dropzone": {
-		"supported": "Stödda filtyper:",
-		"processing": "Bearbetar bild...",
-		"not-supported": "Filtyp stöds inte (än)",
-		"drop": "Släpp din bild här"
+		"supported": "Filtyper som stöds:",
+		"processing": "Bearbetar bilder...",
+		"not-supported": "Filtypen stöds inte (ännu)",
+		"drop": "Släpp din bild här",
+		"drop-multiple": "Släpp en eller flera bilder här"
+	},
+	"canvas": {
+		"arrange": "Dra bilder för att arrangera dem",
+		"save": "Spara komposition",
+		"bring-front": "Lägg överst",
+		"send-back": "Lägg underst",
+		"keyboard-hint": "Använd piltangenter eller HJKL för att flytta 1px, håll Shift för 10px"
 	}
 }

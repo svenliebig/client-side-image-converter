@@ -1,18 +1,27 @@
 {
 	"app": {
-		"name": "Μετατροπή Εικόνας"
+		"name": "Μετατροπέας εικόνων"
 	},
 	"editor": {
 		"resolution": "Ανάλυση",
-		"download": "Κατεβάστε ως ({{resolution}})",
+		"download": "Λήψη ως ({{resolution}})",
+		"save": "TODO: Save Composition",
 		"image": {
-			"download-name": "μετατραπείσα-εικόνα"
+			"download-name": "μετατρεπόμενη-εικόνα"
 		}
 	},
 	"dropzone": {
 		"supported": "Υποστηριζόμενοι τύποι αρχείων:",
-		"processing": "Επεξεργασία εικόνας...",
+		"processing": "TODO: Processing images...",
 		"not-supported": "Ο τύπος αρχείου δεν υποστηρίζεται (ακόμα)",
-		"drop": "Αφήστε την εικόνα σας εδώ"
+		"drop": "Αποθέστε την εικόνα σας εδώ",
+		"drop-multiple": "TODO: Drop one or more images here"
+	},
+	"canvas": {
+		"arrange": "TODO: Drag images to arrange them",
+		"save": "TODO: Save composition",
+		"bring-front": "TODO: Bring to Front",
+		"send-back": "TODO: Send to Back",
+		"keyboard-hint": "TODO: Use arrow keys or HJKL to move 1px, hold Shift for 10px"
 	}
 }

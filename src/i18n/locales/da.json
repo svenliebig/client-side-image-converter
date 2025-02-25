@@ -1,18 +1,27 @@
 {
 	"app": {
-		"name": "Billede Konverter"
+		"name": "Billedkonverter"
 	},
 	"editor": {
 		"resolution": "Opløsning",
 		"download": "Download som ({{resolution}})",
+		"save": "TODO: Save Composition",
 		"image": {
 			"download-name": "konverteret-billede"
 		}
 	},
 	"dropzone": {
 		"supported": "Understøttede filtyper:",
-		"processing": "Behandler billede...",
-		"not-supported": "Filtype understøttes ikke (endnu)",
-		"drop": "Slip dit billede her"
+		"processing": "TODO: Processing images...",
+		"not-supported": "Filtype ikke understøttet (endnu)",
+		"drop": "Slip dit billede her",
+		"drop-multiple": "TODO: Drop one or more images here"
+	},
+	"canvas": {
+		"arrange": "TODO: Drag images to arrange them",
+		"save": "TODO: Save composition",
+		"bring-front": "TODO: Bring to Front",
+		"send-back": "TODO: Send to Back",
+		"keyboard-hint": "TODO: Use arrow keys or HJKL to move 1px, hold Shift for 10px"
 	}
 }

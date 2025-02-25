@@ -1,18 +1,27 @@
 {
 	"app": {
-		"name": "Pildimuundur"
+		"name": "Pildikonverter"
 	},
 	"editor": {
 		"resolution": "Resolutsioon",
 		"download": "Laadi alla kui ({{resolution}})",
+		"save": "TODO: Save Composition",
 		"image": {
-			"download-name": "muudetud-pilt"
+			"download-name": "konverteeritud-pilt"
 		}
 	},
 	"dropzone": {
 		"supported": "Toetatud failitüübid:",
-		"processing": "Pildi töötlemine...",
+		"processing": "TODO: Processing images...",
 		"not-supported": "Failitüüp ei ole toetatud (veel)",
-		"drop": "Lohista oma pilt siia"
+		"drop": "Lohista oma pilt siia",
+		"drop-multiple": "TODO: Drop one or more images here"
+	},
+	"canvas": {
+		"arrange": "TODO: Drag images to arrange them",
+		"save": "TODO: Save composition",
+		"bring-front": "TODO: Bring to Front",
+		"send-back": "TODO: Send to Back",
+		"keyboard-hint": "TODO: Use arrow keys or HJKL to move 1px, hold Shift for 10px"
 	}
 }
